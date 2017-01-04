@@ -69,6 +69,18 @@ public class Basics{
         return myset;
     }
 
+    public static List<String> returnlist(String s){
+        List<String> list=new ArrayList<>();
+        String[] myarray=s.split(" ");
+
+        for(String str: myarray){
+            if(str.length()>6){
+                list.add(str);
+            }
+        }
+        return list;
+    }
+}
 
 
 }
